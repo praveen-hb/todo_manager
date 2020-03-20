@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     render plain: User.find(params[:id]).to_pleasant_string
   end
 
-  def def(create)
+  def create
     name = params[:name]
     email = params[:email]
     password = params[:password]

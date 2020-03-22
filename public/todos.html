@@ -10,30 +10,60 @@
 </head>
 
 <body>
-  <h1>My Todo-list</h1>
-  <input class="input" type="text" placeholder="What's next?" width=190px>
-  <input class="input" type="date" width=93px>
-  <button class="button" type="button" onclick="alert('Thank you, todo added')">Add</button>
+  <main>
+    <h1>My Todo-list</h1>
+    <input class="input" type="text" placeholder="What's next?" width=190px>
+    <input class="input" type="date" width=93px>
+    <button class="button" type="button" onclick="alert('Thank you, todo added')">Add</button>
+  </main>
   <article>
     <section>
-      <h2>Due Today</h2>
-      <p>Submit SaaS 201 project</p>
-      <p>Call accountant</p>
+      <div>
+        <h2>Due Today</h2>
+        <h3 class="completed-items">0/4</h3>
+      </div>
+      <div class="items">
+        <input type="checkbox">
+        <p>Submit SaaS 201 project</p>
+        <h3 class="overdue">Overdue</h3>
+      </div>
+      <div class="items">
+        <input type="checkbox">
+        <p>Call accountant</p>
+      </div>
     </section>
     <section>
-      <h2>Due Tommorow</h2>
-      <p>Refill groceries</p>
+      <div>
+        <h2>Due Tommorow</h2>
+        <h3 class="completed-items">0/3</h3>
+      </div>
+      <div class="items">
+        <input type="checkbox">
+        <p>Refill groceries</p>
+      </div>
     </section>
     <section>
-      <h2>Remaining</h2>
-      <p>Type something</p>
-      <p>Type something</p>
-      <p>Type something</p>
+      <div>
+        <h2>Remaining</h2>
+        <h3 class="completed-items">0/3</h3>
+      </div>
+      <div class="items">
+        <input type="checkbox">
+        <p>Type something</p>
+        <h3 class="due-date">Jan 21</h3>
+      </div>
+      <div class="items">
+        <input type="checkbox">
+        <p>Type something</p>
+        <h3 class="due-date">Jan 22</h3>
+      </div>
+      <div class="items">
+        <input type="checkbox">
+        <p>Type something</p>
+        <h3 class="due-date">Jan 23</h3>
+      </div>
     </section>
   </article>
-
-
-
 </body>
 
 </html>

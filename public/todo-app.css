@@ -4,8 +4,8 @@ body{
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-
 }
+
 h1{
   font-family: OpenSans-Semibold;
   font-size: 20px;
@@ -14,29 +14,80 @@ h1{
   height: 27px;
   width: 129px;
 }
+
 h2{
   font-family: OpenSans-Semibold;
 font-size: 14px;
 color: #453C52;
 letter-spacing: 0.1px;
 height: 19px;
+margin-bottom: 5px;
+margin-top: 5px;
 }
+
+h3{
+  align-content:center;
+  margin-left:10px;
+  margin-bottom: 5px;
+margin-top: 5px;
+}
+
+.completed-items{
+  font-family: OpenSans;
+  font-size: 12px;
+  color: #453C52;
+  letter-spacing: 0.09px;
+}
+
+.overdue{
+  font-family: OpenSans;
+  font-size: 12px;
+  color: #C53030;
+  letter-spacing: 0.09px;
+}
+
+.due-date{
+  font-family: OpenSans;
+  font-size: 12px;
+  color: #726A7E;
+  letter-spacing: 0.09px;
+}
+
 .input{
   height:32px;
+  background: #FFFFFF;
+border: 1px solid #BFB8CC;
+border-radius: 4px;
+border-radius: 4px;
 }
+
 .button{
   background: #48BB78;
 border-radius: 4px;
 border-radius: 4px;
-color:white;
 text-align: center;
-font-size: 19px;
+font-family: OpenSans-Semibold;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: 0.1px;
 width: 72px;
 height: 32px;
 }
+
+div{
+  display: flex;
+}
+
+.items{
+  margin-left: 20px;
+}
+
 section{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main{
+  margin-bottom: 5px;
 }
 p{
   font-family: OpenSans;
@@ -44,5 +95,6 @@ font-size: 14px;
 color: #453C52;
 letter-spacing: 0.1px;
 height: 19px;
-margin-left: 32px;
+margin-bottom: 5px;
+margin-top: 5px;
 }

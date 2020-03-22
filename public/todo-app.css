@@ -1,0 +1,48 @@
+body{
+  max-width: 600px;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+h1{
+  font-family: OpenSans-Semibold;
+  font-size: 20px;
+  color: #453C52;
+  letter-spacing: 0.14px;
+  height: 27px;
+  width: 129px;
+}
+h2{
+  font-family: OpenSans-Semibold;
+font-size: 14px;
+color: #453C52;
+letter-spacing: 0.1px;
+height: 19px;
+}
+.input{
+  height:32px;
+}
+.button{
+  background: #48BB78;
+border-radius: 4px;
+border-radius: 4px;
+color:white;
+text-align: center;
+font-size: 19px;
+width: 72px;
+height: 32px;
+}
+section{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+p{
+  font-family: OpenSans;
+font-size: 14px;
+color: #453C52;
+letter-spacing: 0.1px;
+height: 19px;
+margin-left: 32px;
+}

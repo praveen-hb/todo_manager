@@ -41,10 +41,25 @@ body{
   border: 1px solid #BFB8CC;
 }
 
+
+.TodoItem{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.TodoItem:hover {
+  background-color: #F1EDF7;
+}
+.TodoItem:hover .TodoItem-delete{
+  visibility: visible;
+}
+
 .TodoItem-delete{
+  visibility: hidden;
   margin-left: 10px;
-  margin-bottom: 5px;
-margin-top: 5px;
+  height: 12.2px;
+  width: 8.6px
 
 }
 .TodoSectionTitle-remainingCount{
@@ -105,12 +120,6 @@ height: 32px;
   height: 16px;
 }
 .TodoSectionTitle{
-  display: flex;
-  align-items: center;
-}
-
-.TodoItem{
-  margin-left: 20px;
   display: flex;
   align-items: center;
 }

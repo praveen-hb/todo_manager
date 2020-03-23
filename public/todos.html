@@ -10,61 +10,65 @@
 </head>
 
 <body>
-  <main>
-    <h1>My Todo-list</h1>
-    <input class="input" type="text" placeholder="What's next?" width=190px>
-    <input class="input" type="date" width=93px>
-    <button class="button" type="button" onclick="alert('Thank you, todo added')">Add</button>
+  <main class="TodoPageMain">
+    <article>
+      <h1 class="TodoPage-title">My Todo-list</h1>
+      <section class="AddTodo">
+        <input class="AddTodo-text" type="text" placeholder=" What's next?" width=190px>
+        <input class="AddTodo-date" type="date" width=93px>
+        <button class="AddTodo-button" type="button" onclick="alert('Thank you, todoItem added')">Add</button>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <h2 class="TodoSectionTitle-text">Due Today</h2>
+          <h3 class="TodoSectionTitle-remainingCount">0/4</h3>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <input class="TodoItem-checkbox" type="checkbox">
+            <p>Submit SaaS 201 project</p>
+            <h3 class="TodoItem-overdueLabel">Overdue</h3>
+          </li>
+          <li class="TodoItem">
+            <input class="TodoItem-checkbox" type="checkbox">
+            <p>Call accountant</p>
+            <img class="TodoItem-delete" src="bin.3.svg" height=12.2px width=8.6px>
+          </li>
+        </ul>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <h2 class="TodoSectionTitle-text">Due Tommorow</h2>
+          <h3 class="TodoSectionTitle-remainingCount">0/3</h3>
+        </div>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          <p>Refill groceries</p>
+        </li>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <h2 class="TodoSectionTitle-text">Remaining</h2>
+          <h3 class="TodoSectionTitle-remainingCount">0/3</h3>
+        </div>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          <p>Type something</p>
+          <h3 class="TodoItem-dueDate">Jan 21</h3>
+        </li>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          <p>Type something</p>
+          <h3 class="TodoItem-dueDate">Jan 22</h3>
+        </li>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          <p>Type something</p>
+          <h3 class="TodoItem-dueDate">Jan 23</h3>
+        </li>
+      </section>
+    </article>
   </main>
-  <article>
-    <section>
-      <div>
-        <h2>Due Today</h2>
-        <h3 class="completed-items">0/4</h3>
-      </div>
-      <div class="items">
-        <input type="checkbox">
-        <p>Submit SaaS 201 project</p>
-        <h3 class="overdue">Overdue</h3>
-      </div>
-      <div class="items">
-        <input type="checkbox">
-        <p>Call accountant</p>
-        <img class="image" src="bin.3.svg" height=12.2px width=8.6px>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h2>Due Tommorow</h2>
-        <h3 class="completed-items">0/3</h3>
-      </div>
-      <div class="items">
-        <input type="checkbox">
-        <p>Refill groceries</p>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h2>Remaining</h2>
-        <h3 class="completed-items">0/3</h3>
-      </div>
-      <div class="items">
-        <input type="checkbox">
-        <p>Type something</p>
-        <h3 class="due-date">Jan 21</h3>
-      </div>
-      <div class="items">
-        <input type="checkbox">
-        <p>Type something</p>
-        <h3 class="due-date">Jan 22</h3>
-      </div>
-      <div class="items">
-        <input type="checkbox">
-        <p>Type something</p>
-        <h3 class="due-date">Jan 23</h3>
-      </div>
-    </section>
-  </article>
 </body>
 
 </html>

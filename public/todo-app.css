@@ -41,7 +41,6 @@ body{
   border: 1px solid #BFB8CC;
 }
 
-
 .TodoItem{
   margin-left: 20px;
   display: flex;
@@ -62,6 +61,7 @@ body{
   width: 8.6px
 
 }
+
 .TodoSectionTitle-remainingCount{
   font-family: OpenSans;
   font-size: 12px;
@@ -88,15 +88,16 @@ body{
 .AddTodo-button{
   padding: 6px 22px;
   background-color: #48BB78;
-border-radius: 4px;
-font-family: OpenSans-Semibold;
-font-size: 14px;
-color: #FFFFFF;
-letter-spacing: 0.1px;
-border: 1px solid transparent;
-width: 72px;
-height: 32px;
+  border-radius: 4px;
+  font-family: OpenSans-Semibold;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.1px;
+  border: 1px solid transparent;
+  width: 72px;
+  height: 32px;
 }
+
 .TodoSection{
   margin-bottom: 20px;
 }
@@ -119,6 +120,7 @@ height: 32px;
   width: 16px;
   height: 16px;
 }
+
 .TodoSectionTitle{
   display: flex;
   align-items: center;
@@ -126,7 +128,7 @@ height: 32px;
 
 p{
   font-family: OpenSans;
-font-size: 14px;
-color: #453C52;
-letter-spacing: 0.1px;
+  font-size: 14px;
+  color: #453C52;
+  letter-spacing: 0.1px;
 }

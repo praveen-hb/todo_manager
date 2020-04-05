@@ -6,13 +6,16 @@
   <ul>
     <%todos.each do |todo| %>
       <li class="TodoItem">
-        <% if todo.completed%>
-          <input class="TodoItem-checkbox" type="checkbox" checked>
-          <p class="Todo-text-completed"> <%= todo.todo_text %> </p>
-        <% else %>
-          <input class="TodoItem-checkbox" type="checkbox">
-          <p> <%= todo.todo_text %> </p>
+        <%= form_with(url: "/todos/#{todo.id}", method: "PUT") do %>
+          <input class="TodoItem-checkbox"
+            name= "completed"
+            type="checkbox" <%= todo.completed ? "checked" : "" %>
+            onclick= "this.form.submit()"
+           >
         <% end %>
+        <p class=<%= todo.completed ? "Todo-text-completed" : "" %>>
+          <%= todo.todo_text %>
+        </p>
         <% if show_due_date %>
           <p class= "TodoItem-dueDate"> <%= todo.due_date.to_s(:short) %> </p>
         <% end %>
